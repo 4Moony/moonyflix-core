@@ -56,7 +56,7 @@ describe("Movie type", () => {
   });
 
   test("should have id, title, and release_date properties", () => {
-    const { id, title, release_date, ...rest } = mockMovie;
+    const { id, title, release_date } = mockMovie;
 
     expect(id).toBeDefined();
     expect(title).toBeDefined();
@@ -71,7 +71,7 @@ describe("Movie type", () => {
   });
 
   test("poster_path and backdrop_path can be omitted", () => {
-    const { poster_path, backdrop_path, ...rest } = mockMovie;
+    const { poster_path, backdrop_path } = mockMovie;
 
     expect(poster_path).toBeDefined();
     expect(backdrop_path).toBeDefined();
