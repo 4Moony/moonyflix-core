@@ -3,8 +3,21 @@
   "version": "0.0.1",
   "description": "module core",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "publishConfig": {
+    "scripts": {
+      "prepublishOnly": "npm run build"
+    },
+    "exclude": [
+      "devDependencies"
+    ]
+  },
   "scripts": {
     "build": "tsc",
+    "publish": "npm publish --registry=http://localhost:4873",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "eslint . --ext .ts",
