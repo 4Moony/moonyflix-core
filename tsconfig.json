@@ -2,18 +2,28 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
-    "lib": ["es2017"],
+    "lib": [
+      "es2017"
+    ],
     "allowJs": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "*": ["src/*"]
+      "*": [
+        "src/*"
+      ]
     },
     "outDir": "./dist",
     "declaration": true,
     "emitDeclarationOnly": false
   },
-  "exclude": ["node_modules", "jest.config.js", "coverage", "dist"]
+  "exclude": [
+    "node_modules",
+    "jest.config.js",
+    "coverage",
+    "dist",
+    "__tests__"
+  ]
 }
