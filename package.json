@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "npm-login": "npm login --registry=http://localhost:4873",
     "publish": "npm publish --registry=http://localhost:4873",
     "test": "jest",
     "test:coverage": "jest --coverage",
