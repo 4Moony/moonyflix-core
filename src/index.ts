@@ -1,2 +1,2 @@
 export * from './model/index'
-export * from './definitions/index'
+export * from './contracts/index'
