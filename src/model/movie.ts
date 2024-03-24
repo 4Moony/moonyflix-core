@@ -1,16 +1,19 @@
-export type Movie = {
-  adult: boolean
-  backdrop_path: string
-  genre_ids: number[]
-  id: number
-  original_language: string
-  original_title: string
-  overview: string
-  popularity: number
-  poster_path: string
-  release_date: string
-  title: string
-  video: boolean
-  vote_average: number
-  vote_count: number
+export class Movie {
+  constructor(
+    public adult: boolean,
+    public backdrop_path: string,
+    public genre_ids: number[],
+    public id: number,
+    public original_language: string,
+    public original_title: string,
+    public overview: string,
+    public popularity: number,
+    public poster_path: string,
+    public release_date: string,
+    public title: string,
+    public video: boolean,
+    public vote_average: number,
+    public vote_count: number
+  ) {
+  }
 }
