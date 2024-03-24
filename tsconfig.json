@@ -12,7 +12,7 @@
     "baseUrl": ".",
     "paths": {
       "model/*": ["src/model/*"],
-      "services/*": ["src/definitions/services/*"]
+      "services/*": ["src/contracts/services/*"]
     },
     "outDir": "./dist",
     "declaration": true,
