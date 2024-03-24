@@ -11,9 +11,8 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "*": [
-        "src/*"
-      ]
+      "model/*": ["src/model/*"],
+      "services/*": ["src/definitions/services/*"]
     },
     "outDir": "./dist",
     "declaration": true,
